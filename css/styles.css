@@ -1,0 +1,58 @@
+:root {
+  --color-primery-dark: #31261a;
+  --color-primery-light: #faf4ea;
+  --color-brand-dark: #465929;
+  --color-brand-light: #819b57;
+  /*скринька для однакових елемнтів*/
+}
+
+/*Base*/
+body {
+  color: var(--color-primery-dark);
+}
+ul {
+  list-style-type: none; /*зникають кружечки перед словами у списку*/
+}
+
+/*Button*/
+.button {
+  color: var(--color-primery-light); /*колір тексту*/
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light); /*рамка*/
+  border-radius: 8px; /*закруглює куточки кнопки*/
+  cursor: pointer; /*при наведені на кнопку змінюється курсор*/
+}
+
+/*зміна кнопки при наведені курсором*/
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent; /*при наведені фон кпопки стає прозорим*/
+}
+
+/*Link(посилання)*/
+.link {
+  color: var(--color-primery-light);
+}
+
+.link:hover {
+  color: var(--color-brand-light);
+}
+
+/*Hero section*/
+.hero-title {
+  color: var(--color-primery-light); /*Усе речення має такий елемент*/
+}
+
+.hero-title .accent {
+  color: var(--color-brand-light); /*Слово з класом accent має інший колір*/
+}
+
+/*Advantage section*/
+.advantages-list {
+  color: var(--color-primery-light);
+  background-color: var(--color-brand-light);
+}
+
+.section-title .accent {
+  color: var(--color-brand-dark);
+}
